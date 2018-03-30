@@ -7,6 +7,8 @@ This is a interface built in Reactjs to show list of wines that are stored in `h
 ### To do:
   - Search wines
   - Wines details
+  - Add Redux
+  - Add unittest
 
 ### Done:
   - List all wines
