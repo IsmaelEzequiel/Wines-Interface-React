@@ -5,11 +5,11 @@ This is a interface built in Reactjs to show list of wines that are stored in `h
 ## Features
 
 ### To do:
-  *Search wines*
-  *Wines details*
+  - Search wines
+  - Wines details
 
 ### Done:
-  *List all wines*
+  - List all wines
 
 ## Folder Structure
 
