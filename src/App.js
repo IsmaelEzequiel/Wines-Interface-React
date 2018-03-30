@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import ApiWineList from './components/Api/ApiWineList';
+import WineList from './components/WineList/WineList';
 
 
 class App extends Component {
@@ -21,11 +22,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        { console.log( this.state.wines ) }
+        <WineList wines={this.state.wines} />
       </div>
     );
   }
 }
 
 export default App;
-

@@ -1,11 +1,19 @@
-import React, { Component } from 'react';
-import 'WineList.css';
+import React from 'react';
+import './WineList.css';
+
+import WineListItem from '../WineListItem/WineListItem';
 
 
-const WineList = (wineName) => {
+const WineList = (props) => {
   return (
     <React.Fragment>
-      <li>{{ props.wineName }}</li>
+      <ul>
+        {props.wines.map(wine =>
+          <WineListItem key={wine.id} wineName={wine.name} />
+        )}
+      </ul>
     </React.Fragment>
   )
 }
+
+export default WineList;
