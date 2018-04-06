@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import ApiWineList from './components/Api/ApiWineList';
-import WineList from './components/WineList/WineList';
+import Content from './components/Structure/Content';
 
 
 class App extends Component {
@@ -9,21 +9,23 @@ class App extends Component {
     super(props);
   
     this.state = {
-      wines: []
+      wines: [],
+      isLoading: true
     };
   }
 
   componentWillMount() {
     ApiWineList().then(data => {
-      this.setState({ wines: data })
+      this.setState({
+        wines: data,
+        isLoading: false
+      })
     });
   }
 
   render() {
     return (
-      <div>
-        <WineList wines={this.state.wines} />
-      </div>
+      <Content isLoading={ this.state.isLoading } wines={ this.state.wines } />
     );
   }
 }

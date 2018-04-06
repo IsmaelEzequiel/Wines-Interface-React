@@ -1,0 +1,21 @@
+.header {
+  background-color: #ffb3b3;
+  box-shadow: 0 5px 5px rgba(0,0,0,.2);
+  position: fixed;
+  max-width: 900px;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header__title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
+  color: #FFF; 
+  padding: 20px 0;
+  margin: 0;
+  text-shadow: 3px 3px 0 rgba(0, 220, 220, .5),
+               -3px -2px 0 rgba(255, 50, 50, .5);
+}

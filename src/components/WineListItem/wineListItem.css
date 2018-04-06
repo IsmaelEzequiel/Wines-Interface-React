@@ -1,0 +1,33 @@
+.wine-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: rgba(255,255,2550,.8);
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+  max-width: 150px;
+  min-height: 172px;
+  width: 100%;
+  padding: 10px;
+}
+
+.wine-list__item a {
+  text-decoration: none;
+}
+
+.wine-list__image {
+  display: block;
+  max-width: 50px;
+  width: 100%; 
+  margin: 0 auto;
+}
+
+.wine-list__title {
+  display: block;
+  font-size: 18px;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  margin-top: 20px;
+  color: #404040;  
+}
