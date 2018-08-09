@@ -34,16 +34,32 @@ my-app/
   │   ├── Api
   │   │   ├── ApiWineList.js
   │   │   └── ApiWineList.test.js
+  │   ├── Loading.js
+  │   ├── NotFound.js
+  │   ├── Structure
+  │   │   ├── content.css
+  │   │   ├── Content.js
+  │   │   ├── header.css
+  │   │   ├── Header.js
+  │   │   └── WineDetail.js
   │   ├── utils
   │   │   └── constants.js
-  │   └── WineList
-  │       ├── WineList.css
-  │       ├── WineList.js
-  │       └── WineList.test.js
+  │   ├── WineList
+  │   │   ├── WineList.css
+  │   │   ├── WineList.js
+  │   │   └── WineList.test.js
+  │   └── WineListItem
+  │       ├── wineListItem.css
+  │       ├── WineListItem.js
+  │       └── WineListItem.test.js
+  ├── context
+  │   └── ApiContext.js
   ├── index.css
   ├── index.js
   ├── logo.svg
-  └── registerServiceWorker.js
+  ├── registerServiceWorker.js
+  └── Router.js
+
 ```
 
 For the project to build, **these files must exist with exact filenames**:
