@@ -5,16 +5,14 @@ import Header from './Header';
 import WineList from '../WineList/WineList';
 
 
-const Content = (props) => {
-  return (
-    <Fragment>
-      <Header title={'Beers list.'} />
+const Content = ({ context }) => (
+  <Fragment>
+    <Header title={'Beers list.'} />
 
-      <main className="container">
-        { props.isLoading ? 'Loading...' : <WineList wines={props.wines} /> }
-      </main>
-    </Fragment>
-  )
-}
+    <main className="container">
+      <WineList wines={ context.wines } isLoading={ context.isLoading } />
+    </main>
+  </Fragment>
+);
 
 export default Content;

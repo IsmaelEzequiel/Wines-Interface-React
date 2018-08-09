@@ -1,33 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import ApiWineList from './components/Api/ApiWineList';
 import Content from './components/Structure/Content';
+import { ApiRequestProvider, ApiRequestConsumer } from './context/ApiContext';
 
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-  
-    this.state = {
-      wines: [],
-      isLoading: true
-    };
-  }
-
-  componentWillMount() {
-    ApiWineList().then(data => {
-      this.setState({
-        wines: data,
-        isLoading: false
-      })
-    });
-  }
-
-  render() {
-    return (
-      <Content isLoading={ this.state.isLoading } wines={ this.state.wines } />
-    );
-  }
-}
+const App = () => (
+  <ApiRequestProvider>
+    <ApiRequestConsumer>
+      {context => <Content context={ context } /> }
+    </ApiRequestConsumer>
+  </ApiRequestProvider>
+);
 
 export default App;

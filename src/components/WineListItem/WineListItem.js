@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './wineListItem.css';
 
 
@@ -12,7 +14,7 @@ const WineListItem = (props) => {
           alt={ props.alt }
           />
 
-        <a href="javascript:;" className="wine-list__title">{ props.name }</a>
+        <Link to={`/${props.id}`} className="wine-list__title">{ props.name }</Link>
       </div>
     </div>
   )
